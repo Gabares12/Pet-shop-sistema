@@ -30,6 +30,16 @@ public class Donos {
     public void setAnimal(String animal) {
         this.animal = animal;
     }
+
+
+    @Override
+    public String toString() {
+        return 
+        
+        "Nome: " + nome +
+        " Telefone: " + telefone + 
+        " Animal do animal: " + animal + "\n ";
+    }
     
     
     

@@ -5,7 +5,7 @@ public class RegistroDonos {
 
     Scanner scanner = new Scanner(System.in);
 
-    ArrayList<String> ListaDeDonos = new ArrayList<>();
+    ArrayList<Donos> ListaDeDonos = new ArrayList<>();
 
     public void donos() {
         int escolha = -1;
@@ -30,9 +30,7 @@ public class RegistroDonos {
                 System.out.println("Nome do Animal de estimação ");
                 String animal = scanner.nextLine();
 
-                ListaDeDonos.add(nome);
-                ListaDeDonos.add(telefone);
-                ListaDeDonos.add(animal);
+                ListaDeDonos.add(new Donos(nome, telefone, animal));
 
                 System.out.println("Voltar ao menu? Pressione Enter ");
                 scanner.nextLine();
@@ -41,6 +39,7 @@ public class RegistroDonos {
             else if (escolha == 2) {
 
                 System.out.println("LISTA DE CLIENTES REGISTRADOS :");
+                System.out.println(ListaDeDonos);
                 System.out.println("Clientes registrados " + ListaDeDonos.size());
 
             }
@@ -53,7 +52,6 @@ public class RegistroDonos {
                 System.out.println("Remover Cliente ");
 
             }
-
         }
     }
 }

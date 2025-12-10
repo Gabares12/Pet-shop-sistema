@@ -1,7 +1,7 @@
 public class Principal {
     public static void main(String[] args) {
 
-        Donos donosTeste = new Donos();
+        RegistroDonos donosTeste = new RegistroDonos();
 
         donosTeste.donos();
 
