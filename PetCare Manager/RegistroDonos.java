@@ -15,7 +15,8 @@ public class RegistroDonos {
 
             System.out.println("1 - Novo Cliente ");
             System.out.println("2 - Mostrar Clientes");
-            System.out.println("3 - Remover Cliente ");
+            System.out.println("3 - Cadastro de Animais");
+            System.out.println("4 - Remover Cliente ");
             System.out.println("0 - SAIR");
 
             escolha = scanner.nextInt();
@@ -48,7 +49,9 @@ public class RegistroDonos {
                 scanner.nextLine();
                 System.out.println("voltar ao menu? Pressione enter");
                 scanner.nextLine();
+            
             } else if (escolha == 3) {
+             
                 System.out.println("Remover Cliente ");
 
             }
